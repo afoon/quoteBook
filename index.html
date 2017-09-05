@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body ng-controller="quoteBookCtrl">
+<input ng-model="filter.author" placeholder="search by author">
+<input ng-model="filter.text" placeholder="search by quote"><br><hr>      
+<input value ="" name "" ng-model="newQuote.text"placeholder=" new quote">
+<input value ="" name "" ng-model="newQuote.author" placeholder="author">
+<button type="button" ng-click="addQuote(newQuote)">Add</button><hr>
+<div ng-repeat="quote in quotes| filter: filter track by $index">
+    "{{quote.text}}"<br>
+    {{quote.author}}<br>
+    <button type="button" ng-click="removeQuote()">Delete</button><hr>
+</div>
+
+
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.js"></script>
+  <script src="./app.js"></script>
+  <script src="./ctrl.js"></script>
+  <script src="./service.js"></script>
+</body>
+</html>

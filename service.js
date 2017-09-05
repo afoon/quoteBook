@@ -7,6 +7,7 @@ this.removeQuote = function(index){
 this.addQuote = function(quoteObj){
     this.quotes.push(quoteObj);
 }
+
 })
 
 var quotes = [

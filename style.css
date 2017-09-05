@@ -1,0 +1,53 @@
+.content{
+    width: 75%;
+    margin: auto;
+    vertical-align: center;
+    display: flex;
+    flex-direction: column;
+
+}
+.quoteBox{
+    border: 2px solid #4c4c4c;
+    background-color: #eaf0f9;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-direction: row;
+    padding: 10px;
+    text-align: center;
+    height: auto;
+}
+.searcher{
+    float: right;
+}
+.quoteText{
+    float: left;
+    display: flex;
+    font-size: 24px;
+    font-family: 'Open Sans';
+    width: 33%;
+    padding: 5px;
+}
+.quoteAuthor{
+    float: right;
+    display: flex;
+    color: gray;
+    text-transform: uppercase;
+    width: 33%;
+}
+.button{
+    width: 50px;
+    background: transparent;
+    border-style: none;
+    float: right;
+}
+	
+.icon-flipped {
+    transform: scaleX(-1);
+    -moz-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    -ms-transform: scaleX(-1);
+}
+.newQuote:placeholder{
+  color: transparent;
+}
